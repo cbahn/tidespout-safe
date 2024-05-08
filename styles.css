@@ -6,6 +6,11 @@ body, html {
     background-color: #f0f0f0;
 }
 
+body {
+    max-width: 1080px;
+    margin: auto;
+}
+
 h1 {
     text-align: center;
 }
@@ -14,10 +19,9 @@ h1 {
     position: relative;
     width: 90%;
     height: 0;
-    padding-bottom: 90%;
+    padding-bottom: min(90%, 600px);
     max-width: 600px;
-    max-height: 600px;
-    margin-left: 5%;
+    margin: auto;
     border: 3px solid #555555;
 }
 
@@ -35,13 +39,17 @@ h1 {
 
 .button-container-1 {
     position: relative;
-    margin: 10px;
+    margin: 20px 20px 40px;
+    display: flex;
+    justify-content: center;
     /* border: 3px solid red; */
 }
 
 .button-container-2 {
     position: relative;
-    margin: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
     /* border: 3px solid rgb(46, 114, 160); */
 }
 
